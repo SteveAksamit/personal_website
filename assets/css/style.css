@@ -193,11 +193,7 @@ footer {
 }
 
 h3 {
-  padding-bottom: 1em;
-  margin-bottom: 1em;
-  line-height: 1.3em;
-
-  width: 10em;
+  margin-bottom: 0.3em;
   min-width: 10em;
 
 }
@@ -272,8 +268,20 @@ input[type=submit] {
 
 .work {
   display: flex;
+  flex-direction: column;
   border: 1px solid #ddd;
   margin: 0.5em;
+}
+.work > a {
+  text-align: center;
+}
+.work > h3 {
+  width: 100%;
+}
+.work >p {
+  margin: 0.5em;
+  font-size: 90%;
+  color: black;
 }
 ul {
   padding-left: 1em;
@@ -320,7 +328,14 @@ li{
   margin-left: 0.5em;
   line-height: 1.2em;
 }
+.devicons {
+  width: 40px;
+  margin: 2px;
+}
 
 /* .about-div{
   display: flex;
 } */
+section {
+margin: auto;
+}
