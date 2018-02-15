@@ -328,7 +328,7 @@ li{
   margin-left: 0.5em;
   line-height: 1.2em;
 }
-.devicons {
+section > .devicons {
   width: 40px;
   margin: 2px;
 }
