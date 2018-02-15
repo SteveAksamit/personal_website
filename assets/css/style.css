@@ -336,6 +336,26 @@ section > .devicons {
 /* .about-div{
   display: flex;
 } */
-section {
-margin: auto;
+.iconcontainer {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.express {
+  width: 60px;
+}
+.postgres{
+  width: 37px;
+  margin-right: 2px;
+  margin-top: 2px;
+}
+.redux{
+  width: 40px;
+  margin-left: 2px;
+  margin-top: 2px;
+}
+.node{
+  width: 40px;
+  margin: 4px;
 }
