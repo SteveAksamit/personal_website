@@ -13,10 +13,6 @@ body {
   margin: 0;
 }
 
-/* sticky footer styling */
-
-/* https://css-tricks.com/snippets/css/sticky-footer/ */
-
 html,
 body {
   height: 100%;
@@ -38,12 +34,6 @@ footer,
   margin: 0 1em 1em 1em;
   float: left;
 }
-
-/* end sticky footer styling */
-
-/* start hover styling */
-
-
 nav a:hover {
   color: #5e7f7e;
 }
@@ -53,66 +43,50 @@ nav a:hover {
   opacity: 0.8;
 }
 
-/* end hover styling */
-
-/* general styling */
-
-.container {
+.mycontainer-nav {
   display: flex;
-  justify-content: space-between;
-  width: 100%;
+  justify-content: center;
   margin: 0 auto;
-
+  align-items: center;
+  height: 100%;
+  min-width: 516px;
 }
 
-.container-nav {
+.mycontainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
   align-items: center;
-  text-align: center;
+  padding-right: 1em;
 }
 .container-footer{
   display: flex;
   justify-content: center;
 }
-
-/* h1,
-h2,
-h3,
-p {
-  margin-bottom: 20px;
-} */
-
-/* p:last-child {
-  margin-bottom: 0;
-} */
-
 h2 {
   font-family: Georgia, Times, "Times New Roman", serif;
   font-weight: 700;
   color: rgb(32, 181, 192);
   width: 100%
 }
-
 h1,
 h3 {
   font-family: Georgia, Times, "Times New Roman", serif;
   font-weight: 700;
   color: rgb(32, 181, 192);
 }
-
 h1 {
-  font-size: 2em;
-  padding-bottom: 0.5em;
+  font-size: 2rem;
 }
-
-
 h3 {
   font-size: 1.2em;
-  padding-left: 0.5em;
-  padding-top: 0.5em;
+  margin-bottom: 0.3em;
+  margin-top: 0.3em;
 }
-
-/* header */
-
+.connect-h2 {
+  min-width: 193px;
+}
 #masthead {
   position: fixed;
   z-index: 99;
@@ -122,52 +96,48 @@ h3 {
   border-bottom: 2px solid #ccc;
 }
 
-#logo {
-  width: 13em;
-  min-width: 13em;
-  height: 4rem;
+.logo {
+  min-width: 350px;
   font-family: Georgia, Times, "Times New Roman", serif;
-  font-size: 2em;
+  font-size: 2.5vw;
   font-weight: 700;
   color: #fff;
   text-decoration: none;
+  margin-left: 1rem;
+  margin-right: 1rem;
   align-self: center;
-  margin-left: 1em;
-  padding: 0.4em 0;
+  margin-bottom: 0;
 }
 
 nav {
   min-width: 8em;
   min-width: 8em;
-  align-self: center;
-  height: 2rem;
-  margin-right: 3em;
+  margin-right: 4em;
   display: flex;
-  padding-top: 0.8em;
-  justify-content: center;
+  align-self: center;
+  align-items: flex-end;
 }
 
 nav a {
   color: #fff;
   text-decoration: none;
-
+  font-size: 1.5vw;
 }
 
 .about {
-  padding-left: 1.2em;
+  padding-left: 0.5em;
   border-left: 1px solid #efefef;
+  width: 100%;
 }
 .portfolio{
   padding-right: 1.9em;
 }
 
 nav a:first-child {
-  border-left: 0 none;
-  padding-right: 1em;
+  padding-right: 0.5em;
 }
 
 /* footer */
-
 footer {
   position: fixed;
   bottom: 0;
@@ -178,26 +148,6 @@ footer {
   text-align: center;
   background: #666;
 }
-
-/* sidebar */
-
-.sidebar {
-  width: 18em;
-  height: 7.5em;
-  min-width: 10em;
-  padding: 0.5em;
-  margin-right: 1em;
-  background: #fff;
-  border: 2px solid #666;
-  border-radius: 12px;
-}
-
-h3 {
-  margin-bottom: 0.3em;
-  min-width: 10em;
-
-}
-
 .social {
   width: 58px;
   margin-top: 8px;
@@ -219,12 +169,12 @@ h3 {
 .main-section {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 80%;
   margin: 0 1em 1em;
   background: #fff;
   border: 2px solid #666;
   border-radius: 12px;
-  height: 100%;
+  max-width: 1050px;
 }
 
 /* contact page */
@@ -266,19 +216,13 @@ input[type=submit] {
   border: 0 none;
 }
 
-.work {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid #ddd;
+
+.row > p {
   margin: 0.5em;
+  font-size: 90%;
+  color: black;
 }
-.work > a {
-  text-align: center;
-}
-.work > h3 {
-  width: 100%;
-}
-.work >p {
+.about-div > p {
   margin: 0.5em;
   font-size: 90%;
   color: black;
@@ -297,16 +241,16 @@ h4{
   flex-direction: column;
   justify-content: center;
   height: 5.5em;
-
+  margin-bottom: 0.5em;
+}
+.connect > h3 {
+  margin: 0 auto;
+  text-align: center;
 }
 .icons{
   display: flex;
-  justify-content: space-between;
   margin-top: 0.5em;
-}
-
-.connect-h2 {
-  text-align: center;
+  justify-content: center;
 }
 
 a {
@@ -318,8 +262,8 @@ li{
 }
 
 .about-header {
-  margin: auto;
-  margin-top: 0.5em;
+  text-align: center;
+  margin-top: 0.2em;
 }
 
 .about-p {
@@ -333,9 +277,6 @@ section > .devicons {
   margin: 2px;
 }
 
-/* .about-div{
-  display: flex;
-} */
 .iconcontainer {
 display: flex;
 justify-content: center;
@@ -358,4 +299,59 @@ align-items: center;
 .node{
   width: 40px;
   margin: 4px;
+}
+.row > .iconcontainer, a {
+  margin: 0 auto;
+}
+.main-section > .container > .col > .row {
+  border: 2px solid #4aaaa5;
+  border-radius: 10px;
+  margin: 0.5em 0;
+}
+.main-section > .container > .col > .row {
+  border: 2px solid #4aaaa5;
+  border-radius: 10px;
+  margin: 0.5em 0;
+}
+.main-section > .container > .col > .crypto {
+  margin-bottom: 0;
+}
+
+.sidebar {
+  min-width: 10em;
+  padding-top: 0.5em;
+  margin: 0 auto;
+  background: #fff;
+  border: 2px solid #666;
+  border-radius: 12px;
+  min-width: 220px;
+  margin-bottom: 1em;
+  align-self: flex-start;
+}
+.container {
+  padding-left: 0px;
+  padding-right: 0px;
+  align-self: center;
+}
+
+@media only screen and (max-width: 980px) {
+ #main-container {
+  flex-direction: column-reverse;
+ }
+ .mycontainer{
+   padding-right: 0;
+ }
+
+ .main-section{
+   margin: 0 auto;
+   min-width: 380px;
+   margin-bottom: 1em;
+ }
+.logo{
+  font-size: 1.4em;
+}
+nav a {
+  font-size: 0.9em;
+}
+
 }

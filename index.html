@@ -4,15 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <title>Portfolio | Steve Aksamit</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 </head>
 
 <body>
 
   <header id="masthead">
-    <div class="container container-nav">
-      <h2 id='logo' >Steve Aksamit - Portfolio</h2>
+    <div class="mycontainer-nav">
+      <h2 class='logo'>Steve Aksamit - Portfolio</h2>
       <nav>
         <a href="./index.html" class='portfolio'>Portfolio</a>
         <a href="./about.html" class="about">About</a>
@@ -20,80 +23,102 @@
     </div>
   </header>
 
-  <div id="main-container" class="container">
+  <div id="main-container" class="mycontainer">
     <section class="main-section">
-
-      <div class="work">
-        <a href='https://fullstack-groupmix.herokuapp.com/' target="_blank">
-        <h3>GroupMix</h3>
-        </a>
-        <p>GroupMix creates the perfect playlist by merging the host's music preferences with the guest’s Spotify data to automatically generate smart, dynamic playlists.
-        </p>
-        <section class='iconcontainer'>
-            <img src="assets/images/react.png" alt="React" class='devicons' />
-            <img src="assets/images/redux.png" alt="Redux" class='redux' />
-            <img src="assets/images/express.png" alt="Express" class='express' />
-            <img src="assets/images/postgres.png"  alt="Postgres" class='postgres' />
-            <img src="assets/images/node.png"  alt="Node" class='node' />
-            <img src="assets/images/webpack.png"  alt="Webpack" class='devicons' />
-        </section>
-
-      </div>
-      <div class="work">
-          <a href='https://doctors-patients-spa.herokuapp.com/' target="_blank">
-        <h3>Doctor - Patient Workflow</h3>
-        </a>
-        <p>A patient-doctor workflow app. Schedule, update, view, and cancel patients. View, upload, and delete documents.
-        </p>
-        <section class='iconcontainer'>
-            <img src="assets/images/react.png" alt="React" class='devicons' />
-            <img src="assets/images/redux.png" alt="Redux" class='redux' />
-            <img src="assets/images/express.png" alt="Express" class='express' />
-            <img src="assets/images/postgres.png"  alt="Postgres" class='postgres' />
-            <img src="assets/images/node.png"  alt="Node" class='node' />
-            <img src="assets/images/webpack.png"  alt="Webpack" class='devicons' />
-        </section>
-      </div>
-      <div class="work">
-          <a href='https://crypto-viewer-app.herokuapp.com/' target="_blank">
-        <h3>Cryptocurrency Price Tracker</h3>
-          </a>
-          <p>Moveable, resize-able React widgets capturing real-time Bitcoin data from GDAX API and WebSockets.
-          </p>
-          <section class='iconcontainer'>
-              <img src="assets/images/react.png" alt="React" class='devicons' />
-              <img src="assets/images/redux.png" alt="Redux" class='redux' />
-              <img src="assets/images/express.png" alt="Express" class='express' />
-              <img src="assets/images/postgres.png"  alt="Postgres" class='postgres' />
-              <img src="assets/images/node.png"  alt="Node" class='node' />
-              <img src="assets/images/webpack.png"  alt="Webpack" class='devicons' />
-          </section>
+      <div class="container">
+        <div class='col'>
+          <div class='row'>
+            <a href='https://fullstack-groupmix.herokuapp.com/' target="_blank">
+              <h3>GroupMix</h3>
+            </a>
+            <p>GroupMix creates the perfect playlist by merging the host's music preferences with the guest’s Spotify data to automatically generate smart, dynamic playlists.
+            </p>
+            <section class='iconcontainer'>
+              <img src="assets/images/react.png" alt="React" class='devicons' data-toggle="tooltip" data-placement="bottom" title="React"
+              />
+              <img src="assets/images/redux.png" alt="Redux" class='redux' data-toggle="tooltip" data-placement="bottom" title="Redux"
+              />
+              <img src="assets/images/express.png" alt="Express" class='express' data-toggle="tooltip" data-placement="bottom" title="Express"
+              />
+              <img src="assets/images/postgres.png" alt="Postgres" class='postgres' data-toggle="tooltip" data-placement="bottom" title="Postgres"
+              />
+              <img src="assets/images/node.png" alt="Node" class='node' data-toggle="tooltip" data-placement="bottom" title="Node" />
+              <img src="assets/images/webpack.png" alt="Webpack" class='devicons' data-toggle="tooltip" data-placement="bottom" title="Webpack"
+              />
+            </section>
+          </div>
+          <div class="w-100"></div>
+          <div class='row'>
+            <a href='https://doctors-patients-spa.herokuapp.com/' target="_blank">
+              <h3>Doctor - Patient Workflow</h3>
+            </a>
+            <p>A patient-doctor workflow app. Schedule, update, view, and cancel patients. View, upload, and delete documents.
+            </p>
+            <section class='iconcontainer'>
+              <img src="assets/images/react.png" alt="React" class='devicons' data-toggle="tooltip" data-placement="bottom" title="React"
+              />
+              <img src="assets/images/redux.png" alt="Redux" class='redux' data-toggle="tooltip" data-placement="bottom" title="Redux"
+              />
+              <img src="assets/images/express.png" alt="Express" class='express' data-toggle="tooltip" data-placement="bottom" title="Express"
+              />
+              <img src="assets/images/postgres.png" alt="Postgres" class='postgres' data-toggle="tooltip" data-placement="bottom" title="Postgres"
+              />
+              <img src="assets/images/node.png" alt="Node" class='node' data-toggle="tooltip" data-placement="bottom" title="Node" />
+              <img src="assets/images/webpack.png" alt="Webpack" class='devicons' data-toggle="tooltip" data-placement="bottom" title="Webpack"
+              />
+            </section>
+          </div>
+          <div class="w-100"></div>
+          <div class='row'>
+            <a href='https://crypto-viewer-app.herokuapp.com/' target="_blank">
+              <h3>Cryptocurrency Price Tracker</h3>
+            </a>
+            <p>Moveable, resize-able React widgets capturing real-time Bitcoin data from GDAX API and WebSockets.
+            </p>
+            <section class='iconcontainer crypto'>
+              <img src="assets/images/react.png" alt="React" class='devicons' data-toggle="tooltip" data-placement="bottom" title="React"
+              />
+              <img src="assets/images/redux.png" alt="Redux" class='redux' data-toggle="tooltip" data-placement="bottom" title="Redux"
+              />
+              <img src="assets/images/express.png" alt="Express" class='express' data-toggle="tooltip" data-placement="bottom" title="Express"
+              />
+              <img src="assets/images/postgres.png" alt="Postgres" class='postgres' data-toggle="tooltip" data-placement="bottom" title="Postgres"
+              />
+              <img src="assets/images/node.png" alt="Node" class='node' data-toggle="tooltip" data-placement="bottom" title="Node" />
+              <img src="assets/images/webpack.png" alt="Webpack" class='devicons' data-toggle="tooltip" data-placement="bottom" title="Webpack"
+              />
+            </section>
+          </div>
+        </div>
       </div>
     </section>
     <section class="sidebar">
-      <div class="connect">
-        <h2 class='connect-h2'>Connect With Me</h2>
-        <div class='icons'>
-        <a href="https://github.com/SteveAksamit" target="_blank">
-          <img src="assets/images/github.png" class="social" alt="GitHub" />
-        </a>
-        <a href="https://www.linkedin.com/in/steve-aksamit-aa54286/" target="_blank">
-          <img src="assets/images/linkedin.png" class="social" alt="LinkedIn" />
-        </a>
-        <a href="https://stackoverflow.com/users/story/9356363" target="_blank">
-          <img src="assets/images/stack_overflow.png" class="social" alt="Stack Overflow" />
-        </a>
-      </div>
-      </div>
-    </section>
+        <div class="connect">
+          <h3 class='connect-h2'>Connect With Me</h3>
+          <div class='icons'>
+            <a href="https://github.com/SteveAksamit" target="_blank">
+              <img src="assets/images/github.png" class="social" alt="GitHub" />
+            </a>
+            <a href="https://www.linkedin.com/in/steve-aksamit-aa54286/" target="_blank">
+              <img src="assets/images/linkedin.png" class="social" alt="LinkedIn" />
+            </a>
+            <a href="https://stackoverflow.com/users/story/9356363" target="_blank">
+              <img src="assets/images/stack_overflow.png" class="social" alt="Stack Overflow" />
+            </a>
+          </div>
+        </div>
+      </section>
   </div>
-
   <footer>
     <div class="container container-footer">
-       <h4>SteveAksamit@gmail.com | 773.965.0153</h4>
+      <h4>SteveAksamit@gmail.com | 773.965.0153</h4>
     </div>
   </footer>
+    <script language='javascript'>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    })
+  </script>
 </body>
 
 </html>
-

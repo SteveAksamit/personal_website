@@ -4,15 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <title>Portfolio | Steve Aksamit</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
 
   <header id="masthead">
-    <div class="container">
-      <a href="index.html" id="logo">Steve Aksamit - About</a>
+    <div class="mycontainer-nav">
+      <h2 class="logo">Steve Aksamit - About</h2>
       <nav>
         <a href="./index.html" class='portfolio'>Portfolio</a>
         <a href="./about.html" class="about">About</a>
@@ -20,44 +21,53 @@
     </div>
   </header>
 
-  <div id="main-container" class="container">
-    <section class="main-section">
-      <h1 class='about-header'>About Me</h1>
-      <div class='about-div'>
-        <img src="assets/images/steve2.png" class="auth-image" alt="Steve Aksamit">
+  <div id="main-container" class="mycontainer">
+        <section class="main-section">
+            <div class='container'>
+            <div class='col'>
+          <h1 class='about-header'>About Me</h1>
+          <div class='about-div'>
+            <img src="assets/images/steve2.png" class="auth-image" alt="Steve Aksamit">
 
-        <p class='about-p'>Shifted my career focus to software development after decade+ building/managing global teams and leading implementations of technology suites, data integrations, and BPO services for growth-stage startups in the healthcare space. Proficient in Node / Express / React / Postgres software stack.</p>
+            <p class='about-p'>Shifted my career focus to software development after decade+ building/managing global teams and leading implementations
+              of technology suites, data integrations, and BPO services for growth-stage startups in the healthcare space.
+              </p>
 
-        <p class='about-p'>Proficient: JavaScript, React, Redux, Express, Node, PostgresSQL, Sequelize, SQL, HTML5, CSS3, Git</p>
-        <p class='about-p'>
-            Familiar: Socket.io, D3, jQuery, Passport, Mocha, Chai, Jasmine, Babel, Bluebird, Axios, OAuth, Heroku, Tableau, Bootstrap, Semantic UI, C++, Visual Basic, SQL Server, MongoDB, Nightmare.js</p>
+              <p class='about-p'>Currently teaching Full Stack software development in the MERN stack (MongoDB, Express, React, Node) during part-time night/weekend course at Northwestern University.
+              Proficient in Node / Express / React / Postgres software stack.</p>
 
+            <p class='about-p'>Proficient: JavaScript, React, Redux, Express, Node, PostgresSQL, Sequelize, Socket.io, SQL, HTML5, CSS3, Git</p>
+            <p class='about-p'>
+              Familiar: D3, jQuery, Passport, Mocha, Chai, Jasmine, Babel, Bluebird, Axios, OAuth, Heroku, Tableau, Bootstrap, Semantic UI, C++, Visual Basic, SQL Server, MongoDB, Nightmare.js</p>
+
+          </div>
+        </section>
+
+        <section class="sidebar">
+          <div class="connect">
+            <h3 class='connect-h2'>Connect With Me</h3>
+            <div class='icons'>
+              <a href="https://github.com/SteveAksamit" target="_blank">
+                <img src="assets/images/github.png" class="social" alt="GitHub" />
+              </a>
+              <a href="https://www.linkedin.com/in/steve-aksamit-aa54286/" target="_blank">
+                <img src="assets/images/linkedin.png" class="social" alt="LinkedIn" />
+              </a>
+              <a href="https://stackoverflow.com/users/story/9356363" target="_blank">
+                <img src="assets/images/stack_overflow.png" class="social" alt="Stack Overflow" />
+              </a>
+            </div>
+          </div>
+        </section>
       </div>
-    </section>
-
-    <section class="sidebar">
-      <div class="connect">
-        <h2 class='connect-h2'>Connect With Me</h2>
-        <div class='icons'>
-          <a href="https://github.com/SteveAksamit" target="_blank">
-            <img src="assets/images/github.png" class="social" alt="GitHub" />
-          </a>
-          <a href="https://www.linkedin.com/in/steve-aksamit-aa54286/" target="_blank">
-            <img src="assets/images/linkedin.png" class="social" alt="LinkedIn" />
-          </a>
-          <a href="https://stackoverflow.com/users/story/9356363" target="_blank">
-            <img src="assets/images/stack_overflow.png" class="social" alt="Stack Overflow" />
-          </a>
-        </div>
-      </div>
-    </section>
+    </div>
   </div>
 
   <footer>
-      <div class="container container-footer">
-         <h4>SteveAksamit@gmail.com | 773.965.0153</h4>
-      </div>
-    </footer>
+    <div class="container container-footer">
+      <h4>SteveAksamit@gmail.com | 773.965.0153</h4>
+    </div>
+  </footer>
 </body>
 
 </html>
